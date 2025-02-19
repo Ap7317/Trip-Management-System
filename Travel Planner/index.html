@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Travel Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Travel Planner</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Trip History</a>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="trip-details">
+            <h2>Trip Details</h2>
+            <form id="trip-form">
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+                <span class="error" id="destination-error"></span><br>
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" name="startDate" required>
+                <span class="error" id="startDate-error"></span><br>
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" name="endDate" required>
+                <span class="error" id="endDate-error"></span><br>
+                <label for="preferences">Preferences:</label>
+                <select id="preferences" name="preferences" required>
+                    <option value="beach">Beach</option>
+                    <option value="mountains">Mountains</option>
+                    <option value="city">City</option>
+                </select><br>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+                <span id="char-count">0/200</span><br>
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+        </section>
+        <section id="user-profile">
+            <h2>User Profile</h2>
+            <img src="Profile_Img.png" alt="Profile Image" aria-label="User Profile Image" width="100px" height="100px">
+            <p>Name: Atharava Pratap Singh</p>
+            <p>Email: atharavap@example.com</p>
+        </section>
+        <section id="summary">
+            <h2>Summary</h2>
+            <p id="no-trips-message">Trip Cost and Overview will be updates shortly.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us at: contact@smarttravelplanner.com © 2025 Smart Travel Planner</p>
+    </footer>
+    <script src="validation.js"></script>
+</body>
+</html>
